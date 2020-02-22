@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="audioPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyr-Gk-QhQ">
+                                <rect key="frame" x="210" y="386" width="90" height="39"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Replay">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="replay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g53-hX-tFp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7H-9B-hNr">
+                                <rect key="frame" x="66" y="386" width="84" height="39"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="LE7-QH-Bgh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w8f-3K-14k"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="z9s-LA-wzi">
+                                <rect key="frame" x="143" y="595" width="206" height="31"/>
+                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CKS-bn-CoH"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="n7M-ks-1wD"/>
+                                </connections>
+                            </slider>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="volume :" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="df3-ES-JGj">
+                                <rect key="frame" x="27" y="597" width="87" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="cUS-Rb-a49"/>
+                                </constraints>
+                                <color key="textColor" red="0.99517625570297241" green="0.91663187742233276" blue="0.0058832624927163124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hv7-5o-G6G">
+                                <rect key="frame" x="141" y="316" width="80" height="35"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="a8t-f8-GXY"/>
+                                    <constraint firstAttribute="height" constant="35" id="fTZ-cd-Wn8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="0.056984322589999997" blue="0.46284519800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12S-A0-feq"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple-musicdsdrsdfg" translatesAutoresizingMaskIntoConstraints="NO" id="b6K-Za-pwC">
+                                <rect key="frame" x="37" y="37" width="300" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="QhC-2D-jyB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.168471396" green="0.51802176239999997" blue="0.82454192640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b6K-Za-pwC" secondAttribute="trailing" constant="38" id="25R-5P-Mnp"/>
+                            <constraint firstItem="z9s-LA-wzi" firstAttribute="leading" secondItem="df3-ES-JGj" secondAttribute="trailing" constant="31" id="9vB-cH-y3N"/>
+                            <constraint firstItem="b6K-Za-pwC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="F14-Xb-g0y"/>
+                            <constraint firstItem="xyr-Gk-QhQ" firstAttribute="leading" secondItem="hv7-5o-G6G" secondAttribute="trailing" constant="-11" id="OCk-JJ-eXj"/>
+                            <constraint firstItem="hv7-5o-G6G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="OSi-rC-tnq"/>
+                            <constraint firstItem="b6K-Za-pwC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="OgF-Ah-MOc"/>
+                            <constraint firstItem="R7H-9B-hNr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="QWN-9f-aH6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="df3-ES-JGj" secondAttribute="bottom" constant="42" id="Vft-ec-pXb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z9s-LA-wzi" secondAttribute="trailing" constant="28" id="YgA-Ht-KOK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z9s-LA-wzi" secondAttribute="bottom" constant="42" id="ZjR-gR-Ejy"/>
+                            <constraint firstItem="R7H-9B-hNr" firstAttribute="top" secondItem="xyr-Gk-QhQ" secondAttribute="top" id="ceb-Xn-2fG"/>
+                            <constraint firstItem="R7H-9B-hNr" firstAttribute="top" secondItem="hv7-5o-G6G" secondAttribute="bottom" constant="35" id="geh-wH-vqB"/>
+                            <constraint firstItem="df3-ES-JGj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="jlC-te-InS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xyr-Gk-QhQ" secondAttribute="trailing" constant="75" id="kTy-5Z-P9g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hv7-5o-G6G" secondAttribute="trailing" constant="154" id="nDE-cA-YtO"/>
+                            <constraint firstItem="hv7-5o-G6G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ogL-U3-HvZ"/>
+                            <constraint firstItem="xyr-Gk-QhQ" firstAttribute="leading" secondItem="R7H-9B-hNr" secondAttribute="trailing" constant="60" id="scC-6e-gtE"/>
+                            <constraint firstItem="R7H-9B-hNr" firstAttribute="height" secondItem="xyr-Gk-QhQ" secondAttribute="height" id="tK5-6L-iW3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1196" y="-999.85007496251887"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple-musicdsdrsdfg" width="610" height="371"/>
+    </resources>
+    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
