@@ -3,7 +3,7 @@
 //  Captain Gallery
 //
 //  Created by Home on 7/30/19.
-//  Copyright © 2019 Asiwni. All rights reserved.
+//  Copyright © 2019 Aswini. All rights reserved.
 //
 
 import UIKit
